@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
 }
 
@@ -25,4 +26,9 @@
 
 .container--imagem{
     padding: 1em;
+}
+
+.lista-menu{
+    position: absolute;
+    top: 100%;
 }
