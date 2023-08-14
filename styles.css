@@ -1,11 +1,13 @@
 @import url("./styles/header.css");
+@import url("./styles/banner.css");
 
 
 :root{
    --plano-de-fundo:#EBECEE;
    --cor-cabecalho:#ffffff;
+   --cor-texto:#ffffff;
    --titulo-cabecalho:#EB9B00;
-   --azul-degrade: linear-gradient(97.54deg, #002f52, 35.49%, #326589, 165.37%);
+   --azul-degrade: linear-gradient(#4c1c59,#8d1473);
 }
 
 

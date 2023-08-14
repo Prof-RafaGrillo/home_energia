@@ -6,6 +6,10 @@
     <title>Home Page Energia</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <header class="cabecalho">
@@ -62,6 +66,47 @@
         </div>
         
     </header>
-    
+    <section class="banner">
+        <img class="banner--imagem" src="./img/banner.svg" alt="">
+        <div class="banner--container">
+            <h2 class="banner--titulo">Já sabe por onde começar?</h2>
+            <p class="banner--texto">Encontre em nossa site 
+                informações sobre tipos de energia 
+                e seus processos químicos</p>
+        </div>
+    </section>
+    <sectionc class="carrossel">
+        <h2>Conteudo</h2>
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="./img/ApacheKafka.png" alt=""></div>
+      <div class="swiper-slide"><img src="./img/Liderança.png" alt=""></div>
+      <div class="swiper-slide"><img src="./img/Javascript.png" alt=""></div>
+      <div class="swiper-slide"><img src="./img/Javascript.png" alt=""></div>
+      <div class="swiper-slide"><img src="./img/Javascript.png" alt=""></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+  </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+    const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidePerView: 3,
+        pagination:{
+            el:'.swiper-pagination',
+            type: "bulets"
+        }
+      });
+    </script>
 </body>
 </html>
