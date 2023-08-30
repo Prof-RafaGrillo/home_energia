@@ -9,6 +9,8 @@
    --cor-texto:#ffffff;
    --titulo-cabecalho:#EB9B00;
     --cor-degrade: linear-gradient( #361E50 , #8D1372 160%);
+  --texto-secundario: #361E50;
+  --cor-secundario: #8d1372;
 }
 
 

@@ -6,10 +6,7 @@
     <title>Home Page Energia</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 <body>
     <header class="cabecalho">
@@ -75,36 +72,61 @@
                 e seus processos químicos</p>
         </div>
     </section>
-    <sectionc class="carrossel">
-        <h2>Conteudo</h2>
+     <section class="carrossel">
+        <h2 class="carrossel__titulo">Conteúdo</h2>
         <!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="./img/ApacheKafka.png" alt=""></div>
-      <div class="swiper-slide"><img src="./img/Liderança.png" alt=""></div>
-      <div class="swiper-slide"><img src="./img/Javascript.png" alt=""></div>
-      <div class="swiper-slide"><img src="./img/Javascript.png" alt=""></div>
-      <div class="swiper-slide"><img src="./img/Javascript.png" alt=""></div>
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
-  </div>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/ApacheKafka.png"
+                        alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                <div class="swiper-slide"><img src="img/Liderança.png"
+                        alt="Livro sobre liderança em design da alura books"></div>
+                <div class="swiper-slide"><img src="img/Javascript.png"
+                        alt="Livro sobre javascript assertivo da alurabooks"></div>
+                <div class="swiper-slide"><img src="img/Guia Front-end.png" alt="Livro Guia front end"></div>
+                <div class="swiper-slide"><img src="img/Portugol.png" alt="Livro sobre portugol"></div>
+                
+            </div>
+         
+        </div>
+          <div class="card">
+            <!-- 1º linha -->
+            <div class="card__descrição">
+                <!-- 1º coluna -->
+                <div class="descrição">
+                    <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descrição__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+                <!-- 2º coluna -->
+                <img src="img/Angular.png" class="descrição__imagem">
+            </div>
+
+            <!-- 2º linha -->
+            <div class="card__botões">
+                <!-- 1º coluna -->
+                <ul class="botões">
+                    <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                </ul>
+                <!-- 2º coluna -->
+                <a href="#" class="botões__ancora">Saiba mais</a>
+            </div>
+        </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
     const swiper = new Swiper('.swiper', {
         spaceBetween: 10,
         slidePerView: 3,
         pagination:{
             el:'.swiper-pagination',
-            type: "bulets"
+            type: "bullets"
         }
       });
     </script>
