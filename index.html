@@ -73,7 +73,7 @@
         </div>
     </section>
      <section class="carrossel">
-        <h2 class="carrossel__titulo">Conteúdo</h2>
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
         <!-- Slider main container -->
         <div class="swiper">
             <!-- Additional required wrapper -->
@@ -82,17 +82,18 @@
 
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide"><img src="img/ApacheKafka.png"
-                        alt="Livro sobre apache kafka e spring boot da alura books"></div>
-                <div class="swiper-slide"><img src="img/Liderança.png"
-                        alt="Livro sobre liderança em design da alura books"></div>
-                <div class="swiper-slide"><img src="img/Javascript.png"
-                        alt="Livro sobre javascript assertivo da alurabooks"></div>
-                <div class="swiper-slide"><img src="img/Guia Front-end.png" alt="Livro Guia front end"></div>
-                <div class="swiper-slide"><img src="img/Portugol.png" alt="Livro sobre portugol"></div>
-                
+                <div class="swiper-slide"><a href="https://gustavo11052007.github.io/Energia_atraves_do_lixo/"> <img src="img/Energia_lixo.png"
+                        alt="logo sobre energia lixo"></a></div>
+                <div class="swiper-slide"><a href="https://brendinha0823.github.io/energia_solar/"> <img src="img/energia_solar.jpg"
+                        alt="logo sobre energia solar"></a></div>
+                <div class="swiper-slide"><a href="https://yuri-ghost.github.io/home_energia_fotossintese/"> <img src="img/energiafotossintetica.jpg"
+                        alt="logo energia fotossintetica"></a></div>
+                <div class="swiper-slide"><a href="https://nacaxi.github.io/renovavel/"> <img src="img/ENERGIAS_RENOVÁVEIS.png" alt="Logo energia renováveis"></a></div>
+                <div class="swiper-slide"><a href="https://samircort.github.io/sitequimica/"> <img src="img/Reações_de_combustão.png"
+                    alt="logo reação de Combustão"></a></div>
             </div>
-         
+
+          
         </div>
           <div class="card">
             <!-- 1º linha -->
@@ -119,16 +120,30 @@
             </div>
         </div>
     </section>
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo">CCM República Oriental do Uruguai</h2>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Educação</li>
+            <li class="lista-rodapé__item">
+                <img src="img/logo_escola.jpeg" alt="Logo escola">
+                
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/Caelum.png" alt="Logo da caelum">
+                <a href="#" class="lista-rodapé__link">Caelum</a>
+            </li>
+        </ul>
+
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
-    const swiper = new Swiper('.swiper', {
-        spaceBetween: 10,
-        slidePerView: 3,
-        pagination:{
-            el:'.swiper-pagination',
-            type: "bullets"
-        }
-      });
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
     </script>
 </body>
 </html>
