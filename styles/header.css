@@ -64,3 +64,28 @@
     text-decoration: none;
     
 }
+
+.container--titulo{
+    display: none;
+}
+.opcoes{
+    display: none;
+}
+
+
+@media  screen and (min-width:1024px) {
+    .container--titulo{
+        display: block;
+        font-weight: 700;
+        font-size: 30px;
+        color: var(--titulo-cabecalho);
+    }
+    .opcoes{
+        display: flex;
+    }
+    .opcoes--item{
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+}
+
