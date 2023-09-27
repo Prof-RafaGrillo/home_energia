@@ -21,3 +21,16 @@
   height: 100%;
 }
 
+@media  screen and (min-width:1024px){
+  .banner--titulo{
+    font-size: 40px;
+  }
+  .banner--texto{
+    font-size: 26px;
+  }
+  .banner{
+    padding: 6em 0;
+   
+  }
+
+}
